@@ -1,0 +1,40 @@
+body {
+  background-image: url('https://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+  background-size:auto 100vh; /* largura altura auto => mantém a proporção do eixo horizontal, 100vh => 100% do viewport height(altura da tela)*/
+  font-family: Arial;
+  height: 100vh; /* 100% do viewport hight*/
+}
+
+.menu {
+  background-color: white;
+}
+.menu ul {
+  display: flex; /*um do lado do outro*/
+  justify-content: space-around; /* space-around e space-between só funciona com o display:flex*/
+}
+/* ----Seletor hierárquico------
+ .menu li => todos os li dentro da classe menu
+ li menu => todos os itens dentro de li que possuem a classe menu*/
+
+.menu li { 
+  list-style: none;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title { /* estilo compartilhado entre 2 classes */
+  text-align: center;
+  color: whitesmoke;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
